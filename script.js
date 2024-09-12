@@ -159,9 +159,8 @@ $(document).ready(function() {
 
     $('.reset').click(function(){
         $('.order_item').empty();
+        checkOrderItems();
         alert('전체취소');
     });
-
-
     
 });
