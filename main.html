@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="uiux.css">
+    <title>주문하기</title>
+</head>
+<body>
+    <div>
+        <!-- 메뉴 카테고리 -->
+        <div class="main_category">
+            <ul>
+                <li class="menu_btn cat1" data-target="#burger"><h1>햄버거</h1></li>
+                <li class="menu_btn cat2" data-target="#drink"><h1>음료</h1></li;>
+                    <li class="menu_btn cat3" data-target="#side"><h1>사이드</h1></li>
+                </ul>
+                <!-- 세부 메뉴 카테고리 -->
+                <div class="subcategory">
+                    <ul class="sub_burger sub_menu" id="burger">
+                        <li class="menu_list" data-price="6000" data-goods="스테이크 버거"><div class="img_burger1"></div><p>스테이크 버거</p></li>
+                        <li class="menu_list" data-price="5000" data-goods="하와이안 버거"><div class="img_burger2"></div><p>하와이안 버거</p></li>
+                        <li class="menu_list" data-price="4500" data-goods="치킨 샌드위치"><div class="img_burger3"></div><p>치킨 샌드위치</p></li>
+                    </ul>
+                    <ul class="sub_drink sub_menu" id="drink">
+                        <li class="menu_list" data-price="2500" data-goods="코카콜라"><div class="img_drink1"></div><p>코카콜라</p></li>
+                        <li class="menu_list" data-price="2500" data-goods="스프라이트"><div class="img_drink2"></div><p>스프라이트</p></li>
+                        <li class="menu_list" data-price="2000" data-goods="아메리카노"><div class="img_drink3"></div><p>아메리카노</p></li>
+                    </ul>
+                    <ul class="sub_side sub_menu" id="side">
+                        <li class="menu_list" data-price="3000" data-goods="프랜치 프라이"><div class="img_side1"></div><p>프랜치 프라이</p></li>
+                        <li class="menu_list" data-price="2500" data-goods="코울슬로"><div class="img_side2"></div><p>코울슬로</p></li>
+                    </ul>
+                </div>
+        </div>
+        <!-- 주문 목록 -->
+        <div class="order">
+            <div><h1>주문목록</h1></div>
+            <div class="order_li_cover">
+                <ul class="order_list">
+                    <li class="order_item"></li>
+                    <li class="order_item"></li>
+                    <li class="order_item"></li>
+                    <li class="order_item"></li>
+                    <li class="order_item"></li>
+                    <li class="order_item"></li>
+                    <li class="order_item"></li>
+                    <li class="order_item"></li>
+                    <li class="total">
+                        <span class="total_text display_none">총액 : </span>
+                        <span class="total_text total_price display_none"></span>
+                        <span class="total_text display_none"> 원</span>
+                    </li>
+                </ul>
+                <button type="reset" class="reset">전체취소</button>
+                <button type="submit" class="submit">주문하기</button>
+            </div>
+        </div>       
+    </div>
+    <script src="script.js" async></script>
+</body>
+</html>

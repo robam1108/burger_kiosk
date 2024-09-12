@@ -1,0 +1,251 @@
+body{
+    background-color: #ffc000;
+}
+
+/* 메뉴 영역 */
+.main_category{
+    float: left;
+    /* border: solid 1px; */
+    width: 1120px;
+    height: 880px;
+    margin: 20px 0 20px 20px;
+}
+
+.main_category .menu_btn{
+    list-style: none;
+    float: left;
+}
+
+.menu_btn{
+    width: 185px;
+    height: 120px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.menu_btn:not(.cat1){
+    background-color: #c55a11;
+}
+
+.cat1{
+    background-color: #843c0c;
+}
+
+.main_category ul li h1{
+    color: white;
+    text-align: center;
+    line-height: 50px;
+}
+
+
+/* 세부 메뉴 영역 */
+.subcategory{
+    background-color: #fff2cc;
+    position: relative;
+    top: 80px;
+    /* width: 1050px; */
+    height: 780px;
+    border-radius: 20px;
+}
+
+.sub_drink, .sub_side{
+    display:none;
+}
+
+.sub_menu li{
+    list-style: none;
+    width: 800px;
+    height: 100px;
+    background-color: #fcdfa9;
+    border: solid #ffc000;
+    border-radius: 20px;
+    margin: 110px;
+    margin-left: 140px;
+    display: flex;
+    align-items: center;
+}
+
+.sub_menu li p{
+    font-size: 32px;
+    font-weight: bold;
+    color:#843c0c;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 마우스 호버 효과 */
+.sub_menu li:hover{
+    background: linear-gradient(to bottom, #ffdd9c, #fccd74);
+}
+
+.sub_menu li:hover > div{
+    transform: scale(3.2);
+}
+
+.sub_menu li:hover > p{
+    font-size: 38px;
+}
+
+
+/* 주문 목록 영역 */
+.order{
+    float: right;
+    width: 500px;
+    height: 880px;;
+    /* border: solid 1px; */
+    margin: 20px 20px 20px 0px;
+}
+
+.order div:not(.order_li_cover){
+    position: relative;
+    width: 190px;
+    height: 120px;
+    margin: 10px;
+    border-radius: 50%;
+    background-color: #c55a11;
+    left: 20px;
+}
+
+.order div h1{
+    color: white;
+    text-align: center;
+    line-height: 98px;
+}
+
+.order_li_cover{
+    background-color: #fff2cc;
+    position: relative;
+    top: -62px;
+    height: 780px;
+    border-radius: 20px;
+}
+
+.order_list{
+    position: relative;
+    background-color: white;
+    margin: 16px 25px;
+    top: 32px;
+    height: 600px;
+    padding: 0;
+}
+
+.order_list li{
+    list-style: none;
+    height: 60px;
+    font-size: 26px;
+    display: flex;
+    padding: 0 20px 0 20px;
+}
+
+.order_list li:not(:last-of-type){
+    border-bottom: 1px solid #843c0c;
+}
+
+.order_list li button{
+    border: none;
+    background-color: white;
+    padding: 0;
+    font-size: 28px;
+}
+
+
+/* 주문 목록 내부 간격 */
+
+.display_none{
+    display: none;
+}
+.total{
+    position: relative;
+    bottom: -60px;
+    justify-content: flex-end;
+}
+.order_item span{
+    position: relative;
+    line-height: 60px;
+}
+.order_item .goods{
+    width: 190px;
+}
+.order_item .price{
+    width: 85px;
+    text-align: right;
+}
+.order_item .won{
+    width: 45px;
+}
+.order_item .count{
+    width: 35px;
+    text-align: center;
+}
+
+.order_item button:hover{
+    color: #c00000;
+}
+
+
+/* 버튼 스타일 */
+.order_li_cover > button{
+    width: 222px;
+    height: 70px;
+    position: relative;
+    left: 25px;
+    top: 75px;
+    border: none;
+    border-radius: 15px;
+    font-size: 30px;
+    color: white;
+}
+
+.reset{
+    background-color: #c00000;
+}
+
+.submit{
+    background-color: #548235;
+    margin-left: 2px;
+}
+
+/* 세부 메뉴 이미지 */
+.sub_menu li div{
+    transform: scale(2.5);
+}
+.img_burger1{
+    background: url(./img/burger1.png) center / contain no-repeat;
+    width: 76px;
+    height: 65px;
+}
+.img_burger2{
+    background: url(./img/burger2.png) center / contain no-repeat;
+    width: 72px;
+    height: 66px;
+}
+.img_burger3{
+    background: url(./img/burger3.png) center / contain no-repeat;
+    width: 79px;
+    height: 54px;
+}
+.img_drink1{
+    background: url(./img/drink1.png) center / contain no-repeat;
+    width: 38px;
+    height: 75px;
+}
+.img_drink2{
+    background: url(./img/drink2.png) center / contain no-repeat;
+    width: 41px;
+    height: 75px;
+}
+.img_drink3{
+    background: url(./img/drink3.png) center / contain no-repeat;
+    width: 61px;
+    height: 55px;
+}
+.img_side1{
+    background: url(./img/side1.png) center / contain no-repeat;
+    width: 119px;
+    height: 52px;
+}
+.img_side2{
+    background: url(./img/side2.png) center / contain no-repeat;
+    width: 102px;
+    height: 56px;
+}
