@@ -162,5 +162,13 @@ $(document).ready(function() {
         checkOrderItems();
         alert('전체취소');
     });
+
+
+    // 백앤드 작업임으로 구현하지 않음
+    $('.submit').click(function(){
+        $('.order_item').empty();
+        checkOrderItems();
+        alert('주문완료');
+    });
     
 });
