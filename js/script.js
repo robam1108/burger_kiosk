@@ -36,8 +36,8 @@ $(document).ready(function() {
         var target = $(this).data('target');
         
         // 메뉴 버튼 클릭 시 버튼색 변경
-        $('.menu_btn').not(this).css('background-color' , '#c55a11');
-        $(this).css('background-color' , '#843c0c');
+        $('.menu_btn').not(this).find('h1').css('color', 'white');
+        $(this).find('h1').css('color', '#843c0c');
 
         // 메뉴 버튼 클릭 시 세부 카테고리 변경
         $('.sub_menu').css('display', 'none');

@@ -4,6 +4,9 @@ body{
 
 main{
     display: flex;
+    gap: 2%;
+    position: relative;
+    top: 25px;
 }
 
 footer{
@@ -24,40 +27,49 @@ footer{
     margin: 0 0 20px 20px; */
 }
 
-.main_category .menu_btn{
+.menu_btn{
     list-style: none;
     float: left;
-}
-
-.menu_btn{
-    width: 185px;
-    height: 120px;
+    background: url(../img/menu_tab.png) center / contain no-repeat;
+    width: 170px;
+    height: 72px;
+    border: solid 1px;
     margin: 10px;
-    /* border-radius: 50%; */
 }
 
-.menu_btn:not(.cat1){
+/* .menu_btn{
+    width: 185px;
+    margin: 10px;
+    height: 120px;
+    border-radius: 50%;
+} */
+
+/* .menu_btn:not(.cat1){
     background: url(../img/menu_tab.png) center / contain no-repeat;
-}
+} */
 
-.cat1{
+/* .cat1{
     background: url(../img/menu_tab.png) center / contain no-repeat;
-}
+} */
 
-.main_category ul li h1{
+.menu_btn h1{
     color: white;
     text-align: center;
-    line-height: 50px;
+    /* line-height: 50px; */
 }
 
+.cat1 h1{
+    color: #843c0c;
+}
 
 /* 세부 메뉴 영역 */
 .subcategory{
     background: url(../img/menu_bg.png) center / contain no-repeat;
     position: relative;
-    top: 80px;
-    /* width: 1050px; */
-    height: 780px;
+    top: 81px;
+    border: solid 1px;
+    height: 648px;
+    width: 990px;
 }
 
 .sub_drink, .sub_side{
