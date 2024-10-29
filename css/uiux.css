@@ -1,4 +1,12 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
 body{
+    font-family: 'Pretendard-Regular';
     background: url(../img/bg.png);
 }
 
@@ -38,21 +46,6 @@ footer{
     margin: 10px;
 }
 
-/* .menu_btn{
-    width: 185px;
-    margin: 10px;
-    height: 120px;
-    border-radius: 50%;
-} */
-
-/* .menu_btn:not(.cat1){
-    background: url(../img/menu_tab.png) center / contain no-repeat;
-} */
-
-/* .cat1{
-    background: url(../img/menu_tab.png) center / contain no-repeat;
-} */
-
 .menu_btn h1{
     color: white;
     text-align: center;
@@ -73,10 +66,6 @@ footer{
     width: 1045px;
 }
 
-.sub_drink, .sub_side{
-    display:none;
-}
-
 .sub_menu{
     position: relative;
     top: -93px;
@@ -91,12 +80,16 @@ footer{
     gap: 14%;
 }
 
+.sub_drink, .sub_side{
+    display:none;
+}
+
 .sub_menu li{
     list-style: none;
-    width: 800px;
+    width: 700px;
     height: 100px;
-    background-color: #fcdfa9;
-    border: solid #ffc000;
+    background-color: #FFF379;
+    border: solid black 3px;
     border-radius: 20px;
     /* margin: 110px;
     margin-left: 140px; */
@@ -107,18 +100,20 @@ footer{
 .sub_menu li p{
     font-size: 32px;
     font-weight: bold;
-    color:#843c0c;
+    color:black;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
+    left: -34px;
 }
 
 /* 마우스 호버 효과 */
 .sub_menu li:hover{
-    background: linear-gradient(to bottom, #ffdd9c, #fccd74);
+    background: linear-gradient(to bottom, #FFF379, #FFDC6D);
 }
 
-.sub_menu li:hover > div{
-    transform: scale(3.2);
+.sub_menu li:hover > .menu_bg2 div{
+    transform: scale(2.4);
 }
 
 .sub_menu li:hover > p{
@@ -245,8 +240,24 @@ footer{
 }
 
 /* 세부 메뉴 이미지 */
-.sub_menu li div{
-    transform: scale(2.5);
+
+.menu_bg2{
+    background: url(../img/menu_bg2.png) center / contain no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: -34px;
+    width: 185px;
+    height: 174px;
+    /* border: solid 1px; */
+}
+
+.menu_bg2 div{
+    transform: scale(2.2);
+    transform-origin: center;
+    position: relative;
+    left: 8px;
 }
 .img_burger1{
     background: url(../img/burger1.png) center / contain no-repeat;

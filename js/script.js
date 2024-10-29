@@ -40,8 +40,8 @@ $(document).ready(function() {
         $(this).find('h1').css('color', '#843c0c');
 
         // 메뉴 버튼 클릭 시 세부 카테고리 변경
-        $('.sub_menu').css('display', 'none');
-        $(target).css('display', 'block'); 
+        $('.sub_menu').not($(target)).css('display', 'none');
+        $(target).css('display', 'flex'); 
 
     });
 
