@@ -28,13 +28,6 @@ footer{
 }
 
 /* 메뉴 영역 */
-.main_category{
-    /* float: left; */
-    /* border: solid 1px; */
-    /* width: 1120px;
-    height: 880px;
-    margin: 0 0 20px 20px; */
-}
 
 .menu_btn{
     list-style: none;
@@ -42,7 +35,7 @@ footer{
     background: url(../img/menu_tab.png) center / contain no-repeat;
     width: 170px;
     height: 72px;
-    border: solid 1px;
+    /* border: solid 1px; */
     margin: 10px;
 }
 
@@ -61,7 +54,7 @@ footer{
     background: url(../img/menu_bg.png) center / contain no-repeat;
     position: relative;
     top: 81px;
-    border: solid 1px;
+    /* border: solid 1px; */
     height: 684px;
     width: 1045px;
 }
@@ -86,7 +79,7 @@ footer{
 
 .sub_menu li{
     list-style: none;
-    width: 700px;
+    width: 650px;
     height: 100px;
     background-color: #FFF379;
     border: solid black 3px;
@@ -95,6 +88,7 @@ footer{
     margin-left: 140px; */
     display: flex;
     align-items: center;
+    box-shadow: 0px 5px 0px rgba(0, 0, 0, 1);
 }
 
 .sub_menu li p{
@@ -109,43 +103,30 @@ footer{
 
 /* 마우스 호버 효과 */
 .sub_menu li:hover{
-    background: linear-gradient(to bottom, #FFF379, #FFDC6D);
+    position: relative;
+    bottom: -5px;
+    box-shadow: 0px 5px 0px rgba(0, 0, 0, 0);
+    /* background: linear-gradient(to bottom, #FFF379, #FFDC6D); */
 }
 
-.sub_menu li:hover > .menu_bg2 div{
+/* .sub_menu li:hover > .menu_bg2 div{
     transform: scale(2.4);
 }
 
 .sub_menu li:hover > p{
     font-size: 38px;
-}
+} */
 
 
 /* 주문 목록 영역 */
 .order{
     background: url(../img/order.png) center / contain no-repeat;
-    border: solid 1px;
+    /* border: solid 1px; */
     width: 510px;
     height: 755px;
     position: relative;
     top: 26px;
 }
-
-/* .order div:not(.order_li_cover){
-    position: relative;
-    width: 190px;
-    height: 120px;
-    margin: 10px;
-    border-radius: 50%;
-    background-color: #c55a11;
-    left: 20px;
-} */
-
-/* .order div h1{
-    color: white;
-    text-align: center;
-    line-height: 98px;
-} */
 
 .order_li_cover{
     position: relative;
@@ -156,19 +137,20 @@ footer{
 
 .order_list{
     position: relative;
-    /* background-color: white; */
-    margin: 16px 25px;
-    top: 32px;
+    top: 152px;
+    left: 40px;
     height: 600px;
     padding: 0;
+    width: 430px;
+    /* border: solid 1px; */
 }
 
 .order_list li{
     list-style: none;
-    height: 60px;
+    height: 52px;
     font-size: 26px;
     display: flex;
-    padding: 0 20px 0 20px;
+    /* padding: 0 20px 0 20px; */
 }
 
 /* .order_list li:not(:last-of-type){
@@ -177,7 +159,7 @@ footer{
 
 .order_list li button{
     border: none;
-    background-color: white;
+    background-color: transparent;
     padding: 0;
     font-size: 28px;
 }
@@ -190,7 +172,7 @@ footer{
 }
 .total{
     position: relative;
-    bottom: -60px;
+    bottom: -37px;
     justify-content: flex-end;
 }
 .order_item span{
@@ -205,7 +187,7 @@ footer{
     text-align: right;
 }
 .order_item .won{
-    width: 45px;
+    width: 65px;
 }
 .order_item .count{
     width: 35px;
@@ -213,30 +195,39 @@ footer{
 }
 
 .order_item button:hover{
-    color: #c00000;
+    color: #843c0c;
 }
 
 
 /* 버튼 스타일 */
 .order_li_cover > button{
-    width: 222px;
-    height: 70px;
+    font-family: 'Pretendard-Regular';
+    font-weight: bold;
+    height: 80px;
     position: relative;
-    left: 25px;
-    top: 75px;
-    border: none;
+    left: 35px;
+    top: 65px;
+    border: solid 3px black;
     border-radius: 15px;
     font-size: 30px;
     color: white;
+    box-shadow: 0px 5px 0px rgba(0, 0, 0, 1);
 }
 
 .reset{
-    background-color: #c00000;
+    background-color: #F43D1B;
+    width: 170px;
 }
 
 .submit{
-    background-color: #548235;
-    margin-left: 2px;
+    background-color: #FFBD0B;
+    width: 250px;
+    margin-left: 18px;
+}
+
+.order_li_cover > button:hover{
+    top: 70px;
+    box-shadow: 0px 5px 0px rgba(0, 0, 0, 0);
 }
 
 /* 세부 메뉴 이미지 */
@@ -247,7 +238,7 @@ footer{
     justify-content: center;
     align-items: center;
     position: relative;
-    left: -34px;
+    left: -44px;
     width: 185px;
     height: 174px;
     /* border: solid 1px; */
@@ -298,16 +289,4 @@ footer{
     background: url(../img/side2.png) center / contain no-repeat;
     width: 102px;
     height: 56px;
-}
-
-/* 오너 페이지 이동 버튼 */
-
-a{
-    display: flex;
-    justify-content: flex-end;
-}
-.owner_btn{
-    background: url(../img/icon-settings.png) center / contain no-repeat;
-    width: 20px;
-    height: 20px;
 }
