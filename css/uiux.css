@@ -8,6 +8,7 @@
 body{
     font-family: 'Pretendard-Regular';
     background: url(../img/bg.png);
+    user-select: none;
 }
 
 main{
@@ -33,20 +34,24 @@ footer{
     list-style: none;
     float: left;
     background: url(../img/menu_tab.png) center / contain no-repeat;
-    width: 170px;
-    height: 72px;
+    width: 176px;
+    height: 75px;
     /* border: solid 1px; */
-    margin: 10px;
+    margin-right: 20px;
+    position: relative;
+    top: 8px;
 }
 
-.menu_btn h1{
-    color: white;
+.menu_btn p{
+    font-size: 32px;
+    font-weight: 600;
+    color: #843c0c;;
     text-align: center;
-    /* line-height: 50px; */
+    line-height: 37px;
 }
 
-.cat1 h1{
-    color: #843c0c;
+.cat1 p{
+    color: black;
 }
 
 /* 세부 메뉴 영역 */
@@ -93,7 +98,7 @@ footer{
 
 .sub_menu li p{
     font-size: 32px;
-    font-weight: bold;
+    font-weight: 600;
     color:black;
     margin-left: auto;
     margin-right: auto;
@@ -109,14 +114,9 @@ footer{
     /* background: linear-gradient(to bottom, #FFF379, #FFDC6D); */
 }
 
-/* .sub_menu li:hover > .menu_bg2 div{
-    transform: scale(2.4);
+.sub_menu li:hover > .menu_bg2{
+    bottom: 5px;
 }
-
-.sub_menu li:hover > p{
-    font-size: 38px;
-} */
-
 
 /* 주문 목록 영역 */
 .order{
@@ -128,19 +128,31 @@ footer{
     top: 26px;
 }
 
-.order_li_cover{
+.order_title p{
+    font-size: 38px;
+    color: white;
+    font-weight: 600;
+    margin: 0;
+    position: relative;
+    left: 186px;
+    top: 10px;
+    width: 140px;
+}
+
+/* .order_li_cover{
     position: relative;
     top: -62px;
     height: 780px;
     border-radius: 20px;
-}
+} */
 
 .order_list{
     position: relative;
-    top: 152px;
+    top: 63px;
     left: 40px;
-    height: 600px;
+    height: 500px;
     padding: 0;
+    margin: 0;
     width: 430px;
     /* border: solid 1px; */
 }
@@ -152,10 +164,6 @@ footer{
     display: flex;
     /* padding: 0 20px 0 20px; */
 }
-
-/* .order_list li:not(:last-of-type){
-    border-bottom: 1px solid #843c0c;
-} */
 
 .order_list li button{
     border: none;
@@ -195,27 +203,27 @@ footer{
 }
 
 .order_item button:hover{
-    color: #843c0c;
+    color: #FFBD0B;
 }
 
 
 /* 버튼 스타일 */
 .order_li_cover > button{
     font-family: 'Pretendard-Regular';
-    font-weight: bold;
+    font-weight: 600;
     height: 80px;
     position: relative;
     left: 35px;
-    top: 65px;
+    top: 90px;
     border: solid 3px black;
     border-radius: 15px;
     font-size: 30px;
-    color: white;
-    box-shadow: 0px 5px 0px rgba(0, 0, 0, 1);
+    box-shadow: 0px 7px 0px rgba(0, 0, 0, 1);
 }
 
 .reset{
     background-color: #F43D1B;
+    color: white;
     width: 170px;
 }
 
@@ -226,8 +234,8 @@ footer{
 }
 
 .order_li_cover > button:hover{
-    top: 70px;
-    box-shadow: 0px 5px 0px rgba(0, 0, 0, 0);
+    top: 97px;
+    box-shadow: 0px 7px 0px rgba(0, 0, 0, 0);
 }
 
 /* 세부 메뉴 이미지 */
