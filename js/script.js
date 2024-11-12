@@ -1,5 +1,12 @@
 $(document).ready(function() {
 
+    // 웹 접근성을 위해 tab + enter 시 클릭과 같은 이벤트가 적용되도록 하는 기능
+    $('li[role="button"]').on('keydown', function(event) {
+        if (event.key === 'Enter') {
+          $(this).click(); // 클릭 이벤트를 트리거
+        }
+      });
+
     // 주문 목록의 총 금액 출력 제어 기능
     function checkOrderItems() {
         let allEmpty = true;  // 모든 .order_item이 비어 있는지 확인하는 플래그
@@ -93,9 +100,9 @@ $(document).ready(function() {
                     <span class="goods">${selectedGoods}</span>
                     <span class="price" data-price="${selectedPrice}">${selectedPrice}</span>
                     <span class="won">원</span>
-                    <button class="up_btn">▲</button>
+                    <button class="up_btn"><i class="fa-solid fa-plus"></i></button>
                     <span class="count">1</span>
-                    <button class="down_btn">▼</button>
+                    <button class="down_btn"><i class="fa-solid fa-minus"></i></button>
                 `);
             }
         }
@@ -160,7 +167,7 @@ $(document).ready(function() {
     $('.reset').click(function(){
         $('.order_item').empty();
         checkOrderItems();
-        alert('전체취소');
+        alert('주문을 모두 취소하였습니다.');
     });
 
 
@@ -168,7 +175,7 @@ $(document).ready(function() {
     $('.submit').click(function(){
         $('.order_item').empty();
         checkOrderItems();
-        alert('주문완료');
+        alert('주문을 완료하였습니다.');
     });
     
 });

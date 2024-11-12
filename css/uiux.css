@@ -165,13 +165,6 @@ footer{
     /* padding: 0 20px 0 20px; */
 }
 
-.order_list li button{
-    border: none;
-    background-color: transparent;
-    padding: 0;
-    font-size: 28px;
-}
-
 
 /* 주문 목록 내부 간격 */
 
@@ -202,10 +195,22 @@ footer{
     text-align: center;
 }
 
-.order_item button:hover{
-    color: #FFBD0B;
+.order_item button{
+    border: none;
+    border-radius: 50%;
+    color: white;
+    background-color: black;
+    padding: 0;
+    font-size: 22px;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: 17px;
 }
 
+.order_item button:hover{
+    background-color: #FFBD0B;
+}
 
 /* 버튼 스타일 */
 .order_li_cover > button{
@@ -237,6 +242,13 @@ footer{
     top: 97px;
     box-shadow: 0px 7px 0px rgba(0, 0, 0, 0);
 }
+
+
+/* 마우스 커서 모양 변경 */
+.menu_btn, .menu_list, .submit, .reset, .order_item button{
+    cursor:pointer;
+}
+
 
 /* 세부 메뉴 이미지 */
 
