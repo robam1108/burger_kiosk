@@ -45,7 +45,7 @@ footer{
 .menu_btn p{
     font-size: 32px;
     font-weight: 600;
-    color: #843c0c;;
+    color: #843c0c;
     text-align: center;
     line-height: 37px;
 }
@@ -107,14 +107,15 @@ footer{
 }
 
 /* 마우스 호버 효과 */
-.sub_menu li:hover{
+.sub_menu li:hover, .sub_menu li:focus{
+    outline: none;
     position: relative;
     bottom: -5px;
     box-shadow: 0px 5px 0px rgba(0, 0, 0, 0);
     /* background: linear-gradient(to bottom, #FFF379, #FFDC6D); */
 }
 
-.sub_menu li:hover > .menu_bg2{
+.sub_menu li:hover > .menu_bg2, .sub_menu li:focus > .menu_bg2{
     bottom: 5px;
 }
 
@@ -208,8 +209,9 @@ footer{
     top: 17px;
 }
 
-.order_item button:hover{
+.order_item button:hover, .order_item button:focus{
     background-color: #FFBD0B;
+    outline: none;
 }
 
 /* 버튼 스타일 */
@@ -238,9 +240,10 @@ footer{
     margin-left: 18px;
 }
 
-.order_li_cover > button:hover{
+.order_li_cover > button:hover, .order_li_cover > button:focus{
     top: 97px;
     box-shadow: 0px 7px 0px rgba(0, 0, 0, 0);
+    outline: none;
 }
 
 
