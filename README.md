@@ -1,5 +1,7 @@
 # burger kiosk project
 
+버거 주문 키오스크형 페이지
+
 # Languages&Tools
 
 [![My Skills](https://skillicons.dev/icons?i=jquery,js,html,css)](https://skillicons.dev)
